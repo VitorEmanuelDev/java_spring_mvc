@@ -9,12 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.spring.mvc.model.Pedido;
 
-@RestController 
+@RestController
 public class HomeController {
-
+	
 	@GetMapping("/home")
 	public String home(Model model) {
-		
 		Pedido pedido = new Pedido();
 		pedido.setNomeProduto("Razer Blade 15");
 		pedido.setUrlImagem("https://images-na.ssl-images-amazon.com/images/I/81mIXd99GrL._AC_SL1500_.jpg");
