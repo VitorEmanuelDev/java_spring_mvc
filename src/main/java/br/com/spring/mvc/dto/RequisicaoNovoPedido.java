@@ -3,6 +3,7 @@ package br.com.spring.mvc.dto;
 import javax.validation.constraints.NotBlank;
 
 import br.com.spring.mvc.model.Pedido;
+import br.com.spring.mvc.model.StatusPedido;
 
 public class RequisicaoNovoPedido {
 
@@ -45,6 +46,7 @@ public class RequisicaoNovoPedido {
 		pedido.setNomeProduto(nomeProduto);
 		pedido.setUrlImagem(urlImagem);
 		pedido.setNomeProduto(nomeProduto);
+		pedido.setStatus(StatusPedido.AGUARDANDO);
 		
 		return pedido;
 		
